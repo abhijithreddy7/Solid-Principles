@@ -1,0 +1,31 @@
+Single-Responsibility Principle-
+
+A class should have one and only one reason to change, meaning that a class should have only one job.
+why?
+Because if we dont follow this principle the code becomes complicated and leades to tight coupling making the code fragile.
+
+Open-Closed Principle-
+
+Objects or entities(Classes) should be open for extension but closed for modification.
+why?
+Because when we write codes they should be written such that in future their behaviour and fields can be inherited by another class
+with out being modified.
+
+Liskov Substitution Principle-
+
+every subclass or derived class should be substitutable for their base or parent class without breaking the code or distrupting the functionality of the base class.
+why?
+Because if the the child cannot substitute the parent class then the 
+child has methods that affect the dependency of base class and its methods which it shouldn't,making the code fragile.
+
+Interface Segregation Principle-
+ 
+A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
+why?
+if we dont group and segregate the interfaces based on the methods inside them.If the clients(classes) that implements that the functionalities that they dont require then it might corrupt the classes dependency.
+
+Dependency Inversion Principle-
+
+Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
+why?
+if the high level classes depend on the low level classes they if any changes to be made in the low level classes requires the high level classes to be compiles leaking the information to the customers on which feature we and working and it also leads to tight coupling. so using interffaces and abstraction along with design pattern helps to maintain confidentality and easy to work on the features.
